@@ -8,34 +8,34 @@
 </template>
 
 <script>
-import gallery from "../components/Gallery.vue";
-import { modalInfo, setModal } from "@/modules/modal-handler.js";
-import Modal from "../components/Modal";
+import gallery from '../components/Gallery.vue'
+import { modalInfo, setModal } from '@/modules/modal-handler.js'
+import Modal from '../components/Modal'
 export default {
-  name: "Home",
+  name: 'Home',
   components: {
     gallery,
     Modal
   },
   methods: {
     setModal(state = 0) {
-      this.showModal = false;
-      setModal(state);
-      this.showModal = true;
+      this.showModal = false
+      setModal(state)
+      this.showModal = true
     },
     closeModal() {
-      this.showModal = false;
+      this.showModal = false
     }
   },
   computed: {
     modalInfo() {
-      return modalInfo;
+      return modalInfo
     }
   },
   data: () => {
     return {
       showModal: false
-    };
+    }
   }
-};
+}
 </script>
