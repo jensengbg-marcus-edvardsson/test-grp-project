@@ -1,12 +1,15 @@
 <template>
   <div class="home">
+    <gallery />
   </div>
 </template>
 
 <script>
+import gallery from "../components/Gallery.vue";
 export default {
-  name: 'Home',
+  name: "Home",
   components: {
+    gallery
   }
-}
+};
 </script>
